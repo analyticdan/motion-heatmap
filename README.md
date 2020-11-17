@@ -1,11 +1,17 @@
 # motion-heatmap
 This program takes in a video (or webcam footage) and produces a video with a trailing rainbow of colors behind wherever the program detects motion.
 
-To use this program, `cd` into the repo and run the command:
+This program requires `OpenCV 3` (including some non-core modules) and `numpy`. To install both of these on Unix-like system, run:
 ```
-python motion-heatmap.py [command]*
+pip install python-numpy opencv-contrib-python
 ```
-where commands may be any number of the following commands, separated by spaces:
+or use the appropriate command for your favorite Python package manager.
+
+Then, to use this program, `cd` into the repo and run the command:
+```
+python motion-heatmap.py [commands]
+```
+where `[commands]` may be any number of the following commands, separated by spaces:
 
 * `-i [filename]`
 
@@ -42,3 +48,6 @@ will write the output of the program to `file2.mp4` and not `file1.mp4`.
 Video showcasing example outputs:
 
 [![Video of example outputs.](https://img.youtube.com/vi/a2vCkVucpEc/hqdefault.jpg)](https://youtu.be/a2vCkVucpEc)
+
+This project's implementation was built on top of Roberto Sannazzaro's example from his [Medium post](https://towardsdatascience.com/build-a-motion-heatmap-videousing-opencv-with-python-fd806e8a2340). He, in turn, was inspired by a project from Intel which is publicly available on [GitHub](https://github.com/intel-iot-devkit/python-cv-samples/tree/master/examples/motion-heatmap).
+
