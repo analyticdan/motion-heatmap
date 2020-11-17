@@ -31,7 +31,7 @@ where `[commands]` may be any number of the following commands, separated by spa
 
 * `-d`
 
-  This flag tells the program to display the output as it processes the input video.
+  This flag tells the program to display the output as it runs.
 
 * `-r [rate]`
 
