@@ -31,7 +31,7 @@ where `[commands]` may be any number of the following commands, separated by spa
 
 * `-nd`
 
-  If this flag is not used, the program shows the generated output in a window. This flag tells the program to not display the output as the program generates its output.
+  If this flag is not used, the program shows the generated output in a window by default. This flag tells the program to not display the output as it processes the input video.
 
 * `-r [rate]`
 
