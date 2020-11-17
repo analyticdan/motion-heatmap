@@ -57,9 +57,9 @@ while i < len(sys.argv):
                 print('Error: To use the "-r" flag, the program must be provided '
                       'a number as a decay rate.')
                 exit(-1)
-            if decay_rate < 1:
+            if decay_rate <= 0:
                 print('Error: To use the "-r" flag, the program must be provided '
-                      'a number greater than 1 as a decay rate.')
+                      'a positive number as a decay rate.')
                 exit(-1)
         else:
             print('Error: To use the "-r" flag, the program must be provided '

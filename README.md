@@ -35,7 +35,7 @@ where `[commands]` may be any number of the following commands, separated by spa
 
 * `-r [rate]`
 
-  where `[rate]` is some floating point number greater than 1, representing the inverse decay rate for the program. If this flag is not set, the program will default to an inverse decay rate of 1.01.
+  where `[rate]` is some positive floating point number, representing the inverse decay rate for the program. If this flag is not set, the program will default to an inverse decay rate of 1.01.
 
 Note 1: The program can only output `mp4` files in its current state.
 
