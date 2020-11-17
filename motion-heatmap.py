@@ -10,7 +10,6 @@ def rejuvenate(fgmask, accumulator):
     fgmask = np.stack((fgmask,) * 3, axis=-1)
     return np.maximum(accumulator, fgmask * rejuvenate_const)
 
-
 decay_rate = 1.01 # Generally values between 1.01 and 2.0 seem reasonable.
 display = False
 output = False
@@ -73,7 +72,6 @@ while i < len(sys.argv):
 
 video = cv2.VideoCapture(input_file)
 frame_shape = (int(video.get(4)), int(video.get(3)), 3)
-
 decay_const = np.full(frame_shape, [decay_rate, 1, 1])
 rejuvenate_const = np.full(frame_shape, [179, 225, 225])
 accumulator = np.full(frame_shape, [0, 225, 225])
@@ -81,6 +79,7 @@ accumulator = np.full(frame_shape, [0, 225, 225])
 bg_subtractor = cv2.bgsegm.createBackgroundSubtractorMOG()
 
 frames = []
+
 while video.isOpened():
     try:
         ok, frame = video.read()
