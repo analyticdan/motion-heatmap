@@ -45,7 +45,7 @@ python motion-heatmap.py -o -f "file1.mp4" -of "file2.mp4"
 ```
 will write the output of the program to `file2.mp4` and not `file1.mp4`.
 
-Video showcasing example outputs:
+Here is a video showcasing example outputs:
 
 [![Video of example outputs.](https://img.youtube.com/vi/a2vCkVucpEc/hqdefault.jpg)](https://youtu.be/a2vCkVucpEc)
 
