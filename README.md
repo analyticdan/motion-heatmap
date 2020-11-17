@@ -41,9 +41,9 @@ Note 1: The program can only output `mp4` files in its current state.
 
 Note 2 : If multiple flags with the same functionality are used, the last instance of the flag will be used. For example:
 ```
-python motion-heatmap.py -o -f "file1.mp4" -of "file2.mp4"
+python motion-heatmap.py -r 1.3 -o -f "file1.mp4" -of "file2.mp4" -r 1.5
 ```
-will write the output of the program to `file2.mp4` and not `file1.mp4`.
+will run the program with an inverse decay rate of 1.5 and not 1.3 and write the output of the program to `file2.mp4` and not `file1.mp4`.
 
 Here is a video showcasing example outputs:
 
