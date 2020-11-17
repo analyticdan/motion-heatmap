@@ -12,7 +12,7 @@ def rejuvenate(fgmask, accumulator):
 
 
 decay_rate = 1.01 # Generally values between 1.01 and 2.0 seem reasonable.
-display = True
+display = False
 output = False
 
 input_file = 0 # Default to zero, which asks the OS to use the webcam.
@@ -20,8 +20,8 @@ output_file = 'out.mp4'
 
 i = 1
 while i < len(sys.argv):
-    if sys.argv[i] == '-nd':
-        display = False
+    if sys.argv[i] == '-d':
+        display = True
     elif sys.argv[i] == '-o':
         output = True
     elif sys.argv[i] == '-f':
@@ -90,7 +90,6 @@ while video.isOpened():
         fgmask = bg_subtractor.apply(gray)
         accumulator = decay(accumulator)
         accumulator = rejuvenate(fgmask, accumulator)
-
         frame = cv2.cvtColor(accumulator.astype(np.uint8), cv2.COLOR_HSV2BGR)
         if display:
             cv2.imshow('Video', frame)
