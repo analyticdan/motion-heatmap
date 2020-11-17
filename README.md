@@ -33,7 +33,7 @@ where commands may be any number of the following commands, separated by spaces:
 
 Note 1: The program can only output `mp4` files in its current state.
 
-Note2 : If multiple flags with the same functionality are used, the last instance of the flag will be used. For example:
+Note 2 : If multiple flags with the same functionality are used, the last instance of the flag will be used. For example:
 ```
 python motion-heatmap.py -o -f "file1.mp4" -of "file2.mp4"
 ```
