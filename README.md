@@ -45,8 +45,8 @@ python motion-heatmap.py -r 1.3 -o -f "file1.mp4" -of "file2.mp4" -r 1.5
 ```
 will run the program with an inverse decay rate of 1.5 and not 1.3 and write the output of the program to `file2.mp4` and not `file1.mp4`.
 
-Here is a video showcasing example outputs:
-
+Here are some videos showcasing example outputs:
+[![Video of example outputs.](https://img.youtube.com/vi/C5tvlsuljdI/hqdefault.jpg)](https://youtu.be/C5tvlsuljdI)
 [![Video of example outputs.](https://img.youtube.com/vi/a2vCkVucpEc/hqdefault.jpg)](https://youtu.be/a2vCkVucpEc)
 
 This project's implementation was built on top of Roberto Sannazzaro's example from his [Medium post](https://towardsdatascience.com/build-a-motion-heatmap-videousing-opencv-with-python-fd806e8a2340). He, in turn, was inspired by a project from Intel which is publicly available on [GitHub](https://github.com/intel-iot-devkit/python-cv-samples/tree/master/examples/motion-heatmap).
