@@ -47,7 +47,7 @@ will run the program with an inverse decay rate of 1.5 and not 1.3 and write the
 
 Here are some videos showcasing example outputs:
 
-[![Video of example outputs.](https://img.youtube.com/vi/C5tvlsuljdI/hqdefault.jpg)](https://youtu.be/C5tvlsuljdI)
+[![Video of example outputs.](https://img.youtube.com/vi/AivyIelpr8g/hqdefault.jpg)](https://youtu.be/AivyIelpr8g)
 
 [![Video of example outputs.](https://img.youtube.com/vi/a2vCkVucpEc/hqdefault.jpg)](https://youtu.be/a2vCkVucpEc)
 
