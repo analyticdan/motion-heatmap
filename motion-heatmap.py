@@ -66,7 +66,7 @@ while i < len(sys.argv):
                   'the decay rate as the next argument.')
             exit(-1)
     else:
-        print('Unrecognized program parameter: {0}'.format(argv[i]))
+        print('Unrecognized program parameter: {0}'.format(sys.argv[i]))
         exit(-1)
     i += 1
 
